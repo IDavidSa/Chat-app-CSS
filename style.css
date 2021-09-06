@@ -1,0 +1,188 @@
+:root{
+    /*Primary*/
+    --mainHeading:hsl(271, 36%, 24%);
+    --paragraph:hsl(270, 7%, 64%);
+    --placeholderText:hsl(206, 6%, 79%);
+    --chatRight:hsl(271, 15%, 43%);
+    --chatLeft:hsl(276, 55%, 52%);
+    --subHeading:hsl(276, 100%, 81%);
+
+    /*Gradients*/
+    --gradientMag:hsl(293, 100%, 63%);
+    --gradientViol:hsl(264, 100%, 61%);
+
+    /*Secondary*/
+    --white: hsl(0,0,100%);
+    --appBackground:hsl(270, 20%, 96%);
+    --submitButton:hsl(271, 36%, 24%);
+    --radioButton:hsl(289, 100%, 72%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+
+}
+/*Elemento atras do celular*/
+#graphicElement{
+    background: linear-gradient(var(--gradientMag), var(--gradientViol));
+    padding:400px 240px;
+    border-radius: 0 0 220px 220px;
+    display: inline-block;
+}
+
+/*Div do celular*/
+
+#cellphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:12px 20px;
+    border:2px solid var(--appBackground);
+    border-radius: 50px;
+    width: 303px;
+    height: 554px;
+    background-color: var(--white);
+}
+/*Cabeçalho do app*/
+    #headerApp{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 12px;
+        flex-wrap: wrap;
+        border-radius:32px 32px 5px 5px;
+        padding: 10px 10px;
+        background: linear-gradient(to right, var(--gradientMag), var(--gradientViol));
+        color: white;
+        
+    }
+
+        #headerApp img{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border:solid 2px white;
+            
+        }
+
+        .headerAppDiv p{
+            
+            text-align: left;
+            font-size: 8px;
+            padding: 3px 120px 3px 10px;
+            color:inherit;
+        }
+
+        
+
+        #profileName{
+            color: inherit;
+            font-weight: bold;
+            font-size: 12px;
+            
+        }
+
+        
+/*Corpo do App*/
+    #chatBody{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--appBackground);
+        padding:15px 10px;
+        border-radius: 5px 5px 35px 35px;
+        
+    }
+    .chatText{
+        font-size: 10px;
+        margin-top: 5px;
+        padding: 10px 15px;
+        background-color: #ddd;
+        display: flex;
+        
+    }
+
+    .chatText img{
+        width: 48px;
+        height: 48px;
+        padding: 2px;
+        border-radius: 16px;
+    }
+
+        .left{
+            border-radius: 15px 15px 15px 5px;
+            font-weight: bold;
+            width: 55%;
+            color: var(--chatLeft);
+
+        }
+
+        .right{
+            align-self: flex-end;
+            border-radius: 15px 15px 5px 15px;
+            font-weight: normal;
+            width: 62%;
+            color: var(--chatRight);
+
+        }
+    /*Texto do preço*/
+    .chatPrice{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:8px 20px;
+        margin-top: 8px;
+        background: linear-gradient(to right, var(--gradientMag), var(--gradientViol));
+        color: white;
+        font-weight: normal;
+        font-size: 10px;
+    }
+        .chatEmphasis{
+            font-weight: bold;
+            font-size: 14px;
+
+        }
+    
+    #textPlaceholder{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 9px;
+        margin-top: 13px;
+        background:white;
+        color: var(--placeholderText);
+        border-radius: 25px;
+        padding:8px 12px;
+
+    }
+        #textSubmit{
+            background-color: var(--submitButton);
+            color: white;
+            padding: 5px 7px;
+            border-radius: 50%;
+        }
+    
+    #headerContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        color: var(--paragraph);
+        line-height: 1.5;
+        text-align: center;
+    }
+        #headerTitle{
+            padding: 25px;
+            font-size: 44px;
+            color: var(--mainHeading);
+        }
+
+        
+
+

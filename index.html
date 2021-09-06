@@ -3,45 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Chat app CSS illustration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3a9eb25140.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
+  <header>
+    <div id="graphicElement"></div>
 
-  Samuel Green
-  Available to Walk
+    <div id="cellphone">
 
-  That sounds great. I’d be happy with that.
+      <div id="headerApp">
+          <div class="headerAppDiv">
+            <img src="images/avatar.jpg" alt="Profile Photo">
+          </div>
+          <div class="headerAppDiv">
+          <p id="profileName">Samuel Green</p>
+          <p>Available to Walk</p>
+        </div>
+        <i class="fas fa-ellipsis-v" id="headerOptions"></i>
+      </div>
+      
+      <div id="chatBody">
+        <div class="chatText left">
+          <p>That sounds great. I’d be happy with that.</p>
+        </div>
 
-  Could you send over some pictures of your dog, please?
+        <div class="chatText left">
+          <p>Could you send over some pictures of your dog, please?</p>
+        </div>
 
-  Here are a few pictures. She’s a happy girl!
+        <div class="chatText right">
+          <img src="images/dog-image-1.jpg" alt="Image of dog's head">
+          <img src="images/dog-image-2.jpg" alt="Image of dog relaxing">
+          <img src="images/dog-image-3.jpg" alt="Image of dog playing">
+        </div>
 
-  Can you make it?
+        <div class="chatText right">
+          <p>Here are a few pictures. She’s a happy girl!</p>
+        </div>
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
+        <div class="chatText right">
+          <p>Can you make it?</p>
+        </div>
 
-  30 minute walk
-  $29
+        <div class="chatText left">
+          <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+        </div>
 
-  1 hour walk
-  $49
+        <div class="chatPrice left">
+          <p>30 minute walk</p>
+          <p class="chatEmphasis">$29</p>
+        </div>
 
-  Type a message…
+        <div class="chatPrice left">
+          <p>1 hour walk</p>
+          <p class="chatEmphasis">$49</p>
+        </div>
 
-  Simple booking
+        <div id="textPlaceholder">
+          <p>Type a message…</p>
+          <i class="fas fa-chevron-right" id="textSubmit"></i>
+        </div>
+      </div>
+     
 
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
+    </div>
+    <div id="headerContent">
+      <h1 id="headerTitle">Simple booking</h1>
+      <p id="headerParagraph">Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+        discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        your walker and book again all through the chat.</p>
+    </div>
+    
+  </header>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+ 
+
+  
+
+  
+
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
