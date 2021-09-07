@@ -12,7 +12,7 @@
     --gradientViol:hsl(264, 100%, 61%);
 
     /*Secondary*/
-    --white: hsl(0,0,100%);
+    --white: rgb(255, 255, 255);
     --appBackground:hsl(270, 20%, 96%);
     --submitButton:hsl(271, 36%, 24%);
     --radioButton:hsl(289, 100%, 72%);
@@ -29,12 +29,23 @@ body{
     box-sizing: border-box;
 
 }
+
+#cabecalho{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 /*Elemento atras do celular*/
 #graphicElement{
     background: linear-gradient(var(--gradientMag), var(--gradientViol));
-    padding:400px 240px;
-    border-radius: 0 0 220px 220px;
+    padding:320px 240px;
+    border-radius: 0 0 230px 230px;
     display: inline-block;
+    position: relative;
+    bottom: 50px;
+    
+    
 }
 
 /*Div do celular*/
@@ -49,9 +60,12 @@ body{
     width: 303px;
     height: 554px;
     background-color: var(--white);
+    position: relative;
+    right: 50px;
+
 }
 /*Cabeçalho do app*/
-    #headerApp{
+    #appHeader{
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -60,33 +74,35 @@ body{
         border-radius:32px 32px 5px 5px;
         padding: 10px 10px;
         background: linear-gradient(to right, var(--gradientMag), var(--gradientViol));
-        color: white;
+        color: var(--white);
         
     }
 
-        #headerApp img{
+        #appHeader img{
             width: 45px;
             height: 45px;
             border-radius: 50%;
-            border:solid 2px white;
+            border:solid 2px var(--white);
             
         }
 
-        .headerAppDiv p{
+        .appHeaderDiv p{
             
             text-align: left;
             font-size: 8px;
-            padding: 3px 120px 3px 10px;
+            padding: 3px 110px 3px 10px;
             color:inherit;
         }
-
-        
 
         #profileName{
             color: inherit;
             font-weight: bold;
             font-size: 12px;
             
+        }
+
+        .appHeaderIcons{
+            padding: 5px;
         }
 
         
@@ -139,14 +155,13 @@ body{
         padding:8px 20px;
         margin-top: 8px;
         background: linear-gradient(to right, var(--gradientMag), var(--gradientViol));
-        color: white;
+        color: var(--white);
         font-weight: normal;
         font-size: 10px;
     }
         .chatEmphasis{
             font-weight: bold;
             font-size: 14px;
-
         }
     
     #textPlaceholder{
@@ -155,7 +170,7 @@ body{
         align-items: center;
         font-size: 9px;
         margin-top: 13px;
-        background:white;
+        background:var(--white);
         color: var(--placeholderText);
         border-radius: 25px;
         padding:8px 12px;
@@ -163,7 +178,7 @@ body{
     }
         #textSubmit{
             background-color: var(--submitButton);
-            color: white;
+            color: var(--white);
             padding: 5px 7px;
             border-radius: 50%;
         }
@@ -171,15 +186,18 @@ body{
     #headerContent{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding: 30px;
         color: var(--paragraph);
         line-height: 1.5;
-        text-align: center;
+        text-align: left;
+        width: 400px;
+        position: relative;
+        right: 50px;
     }
         #headerTitle{
             padding: 25px;
-            font-size: 44px;
+            
             color: var(--mainHeading);
         }
 
